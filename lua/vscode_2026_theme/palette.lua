@@ -17,6 +17,10 @@ local M = {
     bg_search = "#1E4352",
     bg_cursorline = "#242526",
     bg_subtle = "#242526",
+    -- Active selection in popups/menus: VS Code blends the accent
+    -- (#3994BC) over the widget background; approximated opaque here so
+    -- the selected row reads clearly against bg_float (#202122).
+    sel = "#284450",
     border = "#2A2B2C",
     border_strong = "#333536",
     fg = "#BBBEBF",
@@ -54,14 +58,22 @@ local M = {
     background = "light",
     bg = "#FFFFFF",
     bg_alt = "#FAFAFD",
-    bg_float = "#FFFFFF",
-    bg_popup = "#FFFFFF",
+    -- VS Code uses #FAFAFD for widget/menu/suggest backgrounds and lifts
+    -- them with a drop shadow over the #FFFFFF editor. Neovim has no
+    -- shadow, so float/popup backgrounds are nudged a touch darker than
+    -- the upstream #FAFAFD to stay distinct from Normal (#FFFFFF).
+    bg_float = "#F2F2F6",
+    bg_popup = "#F2F2F6",
     bg_sidebar = "#FAFAFD",
     bg_statusline = "#FAFAFD",
     bg_visual = "#BFD9F2",
     bg_search = "#FFF5B0",
     bg_cursorline = "#F0F0F3",
     bg_subtle = "#EAEAEA",
+    -- Active selection in popups/menus: VS Code blends the accent
+    -- (#0069CC) over the widget background; approximated opaque here so
+    -- the selected row reads clearly against bg_float (#FFFFFF).
+    sel = "#D6E6F7",
     border = "#E2E2E5",
     border_strong = "#D8D8D8",
     fg = "#202020",
