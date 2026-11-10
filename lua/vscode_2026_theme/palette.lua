@@ -55,6 +55,9 @@ local M = {
     -- line's tint again over the line's, so the same hue twice as strong.
     diff_text = "#54311c",
     diff_delete = "#341b1b",
+    -- The changed text inside a deleted line, derived as diff_text is: the
+    -- delete tint's step from the editor ground, doubled.
+    diff_delete_text = "#562322",
   },
   ["vscode-2026-light"] = {
     name = "vscode-2026-light",
@@ -113,6 +116,7 @@ local M = {
     diff_change = "#ffd8b5",
     diff_text = "#ffb16b",
     diff_delete = "#ffebe9",
+    diff_delete_text = "#ffd7d3",
   },
 }
 

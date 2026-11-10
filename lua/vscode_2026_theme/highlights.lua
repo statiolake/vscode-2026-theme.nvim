@@ -125,6 +125,8 @@ function M.build(c)
     DiffChange = { bg = c.diff_change },
     DiffDelete = { bg = c.diff_delete },
     DiffText = { fg = c.fg, bg = c.diff_text, bold = true },
+    -- incremental-diff's inline view: the changed words on a deleted line.
+    IncDiffDeleteText = { bg = c.diff_delete_text },
     diffAdded = { fg = c.string },
     diffChanged = { fg = c.warn },
     diffRemoved = { fg = c.error },
