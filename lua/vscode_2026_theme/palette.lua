@@ -101,7 +101,11 @@ local M = {
     markdown_link_text = "#0a3069",
     markdown_bracket = "#0550ae",
     info = "#0069CC",
-    warn = "#B69500",
+    -- VS Code Light 2026's warning text (list.warningForeground), not its
+    -- squiggle (#BF8803): the colour is read as text here — a warning's
+    -- message, a notification, a dirty file's name — and #B69500 was
+    -- 2.9:1 on the editor's white. This is 5.8:1 there, 5.2:1 on a float.
+    warn = "#855F00",
     error = "#ad0707",
     hint = "#0550ae",
     debug = "#8250df",
