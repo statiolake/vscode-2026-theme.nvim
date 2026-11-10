@@ -51,6 +51,9 @@ local M = {
     debug = "#B267E6",
     diff_add = "#1c2c1c",
     diff_change = "#332218",
+    -- The changed text inside a changed line: VS Code draws it as the
+    -- line's tint again over the line's, so the same hue twice as strong.
+    diff_text = "#54311c",
     diff_delete = "#341b1b",
   },
   ["vscode-2026-light"] = {
@@ -104,6 +107,7 @@ local M = {
     debug = "#8250df",
     diff_add = "#dafbe1",
     diff_change = "#ffd8b5",
+    diff_text = "#ffb16b",
     diff_delete = "#ffebe9",
   },
 }

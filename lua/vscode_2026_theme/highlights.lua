@@ -124,7 +124,7 @@ function M.build(c)
     DiffAdd = { bg = c.diff_add },
     DiffChange = { bg = c.diff_change },
     DiffDelete = { bg = c.diff_delete },
-    DiffText = { fg = c.fg, bg = c.bg_cursorline, bold = true },
+    DiffText = { fg = c.fg, bg = c.diff_text, bold = true },
     diffAdded = { fg = c.string },
     diffChanged = { fg = c.warn },
     diffRemoved = { fg = c.error },
